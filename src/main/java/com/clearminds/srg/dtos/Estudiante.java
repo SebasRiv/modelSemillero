@@ -2,15 +2,15 @@ package com.clearminds.srg.dtos;
 
 public class Estudiante {
 
+	private int id;
 	private String nombre;
 	private String apellido;
-	private int id;
 
-	public Estudiante(String nombre, String apellido, int id) {
+	public Estudiante(int id, String nombre, String apellido) {
 		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.id = id;
 	}
 
 	public Estudiante(String nombre, String apellido) {
@@ -21,7 +21,7 @@ public class Estudiante {
 
 	@Override
 	public String toString() {
-		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + "]";
+		return "Estudiante [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + "]";
 	}
 
 }
