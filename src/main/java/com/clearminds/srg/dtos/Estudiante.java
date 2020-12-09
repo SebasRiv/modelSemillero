@@ -5,6 +5,9 @@ public class Estudiante {
 	private int id;
 	private String nombre;
 	private String apellido;
+	
+	public Estudiante() {
+	}
 
 	public Estudiante(int id, String nombre, String apellido) {
 		super();
